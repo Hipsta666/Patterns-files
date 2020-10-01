@@ -39,7 +39,7 @@ public class AccountManagerImpl implements MailAccountManager {
             fileIn = new BufferedReader(new FileReader("Server.csv"));
             while ((rememberLine = fileIn.readLine()) != null) {
                 String[] registered = rememberLine.substring(1, rememberLine.length() - 1).split(", ");
-                if (accountRemove[0].equals(registered[0]) & accountRemove[1].equals(registered[1])) {
+                if (accountRemove[0].equals(registered[0]) && accountRemove[1].equals(registered[1])) {
                     connection = false;
                 } else {
                     registeredAccounts.add(registered);
@@ -91,7 +91,7 @@ public class AccountManagerImpl implements MailAccountManager {
             fileIn = new BufferedReader(new FileReader("Server.csv"));
             while ((rememberLine = fileIn.readLine()) != null) {
                 String[] registered = rememberLine.substring(1, rememberLine.length() - 1).split(", ");
-                if (check[0].equals(registered[0]) & check[1].equals(registered[1])) {
+                if (check[0].equals(registered[0]) && check[1].equals(registered[1])) {
                     return  new Person(registered[2], registered[3]);
                 }
             }

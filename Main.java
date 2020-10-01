@@ -33,7 +33,6 @@ public class Main {
             acc.getPerson("asdasd@.ru", "4123");
             acc.getPerson("asdasd@.ru", "3214");
 
-
 //            acc.getPerson("asdasd@.ru", "3124");
             System.out.println("Wrong attempts: " + AttemptCounter.getInstance().getLogs());
 

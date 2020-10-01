@@ -7,7 +7,7 @@ public class Person {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String  getName(){
+    public String getName(){
         return fullName;
     }
 
